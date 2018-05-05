@@ -1,0 +1,119 @@
+[2017-05-11 19:13:21] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"3f1c7e4"}
+[2017-05-11 19:13:21] slim-app.DEBUG: null [] {"uid":"3f1c7e4"}
+[2017-05-11 19:15:30] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"6d867be"}
+[2017-05-11 19:15:30] slim-app.DEBUG: null------>111111111 [] {"uid":"6d867be"}
+[2017-05-11 19:18:55] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"46f9aa9"}
+[2017-05-11 19:18:55] slim-app.DEBUG: {"username":"koalafiadmin","password":"111111111111"}------>111111111 [] {"uid":"46f9aa9"}
+[2017-05-11 19:19:18] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"0a81113"}
+[2017-05-11 19:19:18] slim-app.DEBUG: {"username":"admin","password":"admin123"}------>111111111 [] {"uid":"0a81113"}
+[2017-05-11 19:46:19] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"08d2daf"}
+[2017-05-11 19:46:19] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"08d2daf"}
+[2017-05-11 19:46:19] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"08d2daf"}
+[2017-05-11 19:50:23] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"4a9ff4d"}
+[2017-05-11 19:50:23] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"4a9ff4d"}
+[2017-05-11 19:50:23] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"4a9ff4d"}
+[2017-05-11 19:51:45] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"b473b0e"}
+[2017-05-11 19:51:45] slim-app.DEBUG: {"username":"koalafiadmin","password":"111111111111"} [] {"uid":"b473b0e"}
+[2017-05-11 19:51:45] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"b473b0e"}
+[2017-05-11 20:16:07] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"34b937c"}
+[2017-05-11 20:16:07] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"34b937c"}
+[2017-05-11 20:16:07] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"34b937c"}
+[2017-05-11 20:17:33] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"7c242dd"}
+[2017-05-11 20:17:33] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"7c242dd"}
+[2017-05-11 20:17:33] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"7c242dd"}
+[2017-05-14 14:04:44] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"8f0a5b6"}
+[2017-05-14 14:04:45] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"8f0a5b6"}
+[2017-05-14 14:04:45] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"8f0a5b6"}
+[2017-05-14 14:07:01] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"f8054c9"}
+[2017-05-14 14:07:01] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"f8054c9"}
+[2017-05-14 14:07:01] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"f8054c9"}
+[2017-05-14 14:08:39] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"22e161f"}
+[2017-05-14 14:08:39] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"22e161f"}
+[2017-05-14 14:08:39] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"22e161f"}
+[2017-05-14 20:06:05] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"0a7342e"}
+[2017-05-14 20:06:05] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"0a7342e"}
+[2017-05-14 20:06:05] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"0a7342e"}
+[2017-05-14 20:06:47] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"2585510"}
+[2017-05-14 20:06:47] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"2585510"}
+[2017-05-14 20:06:47] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"2585510"}
+[2017-05-14 20:07:04] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"31cb52f"}
+[2017-05-14 20:07:04] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"31cb52f"}
+[2017-05-14 20:07:04] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"31cb52f"}
+[2017-05-15 11:46:43] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"fdaf70a"}
+[2017-05-15 11:46:43] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"fdaf70a"}
+[2017-05-15 11:46:43] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"fdaf70a"}
+[2017-05-15 11:59:23] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"349425d"}
+[2017-05-15 11:59:23] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"349425d"}
+[2017-05-15 11:59:23] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"349425d"}
+[2017-05-15 14:54:39] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"c8b554f"}
+[2017-05-15 14:54:39] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"c8b554f"}
+[2017-05-15 14:54:39] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"c8b554f"}
+[2017-05-16 11:58:40] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"2c2a674"}
+[2017-05-16 11:58:40] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"2c2a674"}
+[2017-05-16 11:58:40] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"2c2a674"}
+[2017-05-16 12:28:35] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"4458783"}
+[2017-05-16 12:28:35] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"4458783"}
+[2017-05-16 12:28:35] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"4458783"}
+[2017-05-16 12:31:22] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"22fc31c"}
+[2017-05-16 12:31:22] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"22fc31c"}
+[2017-05-16 12:31:22] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"22fc31c"}
+[2017-05-16 12:32:17] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"a19e650"}
+[2017-05-16 12:32:17] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"a19e650"}
+[2017-05-16 12:32:17] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"a19e650"}
+[2017-05-16 12:35:05] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"509e289"}
+[2017-05-16 12:35:05] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"509e289"}
+[2017-05-16 12:35:05] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"509e289"}
+[2017-05-16 12:36:29] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"f0ddfdb"}
+[2017-05-16 12:36:29] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"f0ddfdb"}
+[2017-05-16 12:36:29] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"f0ddfdb"}
+[2017-05-16 12:37:06] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"d51858e"}
+[2017-05-16 12:37:06] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"d51858e"}
+[2017-05-16 12:37:06] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"d51858e"}
+[2017-05-16 12:39:04] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"ed87c8c"}
+[2017-05-16 12:39:04] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"ed87c8c"}
+[2017-05-16 12:39:04] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"ed87c8c"}
+[2017-05-16 12:39:18] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"9fecddc"}
+[2017-05-16 12:39:18] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"9fecddc"}
+[2017-05-16 12:39:18] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"9fecddc"}
+[2017-05-16 12:39:42] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"1610308"}
+[2017-05-16 12:39:42] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"1610308"}
+[2017-05-16 12:39:42] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"1610308"}
+[2017-05-16 12:45:21] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"928f293"}
+[2017-05-16 12:45:21] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"928f293"}
+[2017-05-16 12:45:21] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"928f293"}
+[2017-05-16 12:48:52] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"b2a544a"}
+[2017-05-16 12:48:52] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"b2a544a"}
+[2017-05-16 12:48:52] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"b2a544a"}
+[2017-05-16 12:54:19] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"62cb4ed"}
+[2017-05-16 12:54:20] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"62cb4ed"}
+[2017-05-16 12:54:20] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"62cb4ed"}
+[2017-05-16 12:54:21] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"255ecb4"}
+[2017-05-16 12:54:21] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"255ecb4"}
+[2017-05-16 12:54:21] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"255ecb4"}
+[2017-05-16 12:56:31] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"480b7ce"}
+[2017-05-16 12:56:31] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"480b7ce"}
+[2017-05-16 12:56:31] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"480b7ce"}
+[2017-05-16 13:14:20] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"6b8cd43"}
+[2017-05-16 13:14:20] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"6b8cd43"}
+[2017-05-16 13:14:20] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"6b8cd43"}
+[2017-05-16 13:22:36] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"613c8b7"}
+[2017-05-16 13:22:36] slim-app.DEBUG: {"username":"","password":""} [] {"uid":"613c8b7"}
+[2017-05-16 13:22:36] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"613c8b7"}
+[2017-05-16 13:22:49] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"d11f1dd"}
+[2017-05-16 13:22:49] slim-app.DEBUG: {"username":"alectoadmin","password":"111111111111"} [] {"uid":"d11f1dd"}
+[2017-05-16 13:22:49] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"d11f1dd"}
+[2017-05-16 13:23:40] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"bc450d9"}
+[2017-05-16 13:23:40] slim-app.DEBUG: {"username":"koalafiadmin","password":"111111111111"} [] {"uid":"bc450d9"}
+[2017-05-16 13:23:40] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"bc450d9"}
+[2017-05-16 13:36:29] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"af0a9d7"}
+[2017-05-16 13:36:29] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"af0a9d7"}
+[2017-05-16 13:36:29] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"af0a9d7"}
+[2017-05-16 13:36:46] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"d58f0c3"}
+[2017-05-16 13:36:46] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"d58f0c3"}
+[2017-05-16 13:36:46] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"d58f0c3"}
+[2017-05-16 14:47:06] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"cf26a5c"}
+[2017-05-16 14:47:06] slim-app.DEBUG: {"username":"admin","password":"admin123"} [] {"uid":"cf26a5c"}
+[2017-05-16 14:47:06] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"cf26a5c"}
+[2017-05-16 14:47:53] slim-app.INFO: This is Rules Admin Login Action [] {"uid":"01df5c6"}
+[2017-05-16 14:47:53] slim-app.DEBUG: {"username":"koalafiadmin","password":"111111111111"} [] {"uid":"01df5c6"}
+[2017-05-16 14:47:53] slim-app.DEBUG: select `u`.`user_id`, `u`.`provider_id`, `u`.`company_code`, `u`.`username`, `u`.`usertype`, `u`.`first_name`, `u`.`last_name`, `u`.`email`, `u`.`phone`, `u`.`role_id`, `u`.`department_id`, `c`.`company_logo` from `users` as `u` inner join `company` as `c` on `u`.`company_code` = `c`.`company_id` where `u`.`username` = ? and `u`.`password` = ? [] {"uid":"01df5c6"}

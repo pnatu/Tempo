@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Business Rules Engine Consumer</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+
+    <body>
+        <h3>Business Rules Engine Consumer API Demo</h3>
+        
+        <form name="ruleconsumer" id="ruleconsumer" method="POST" action="">
+            <table>
+                <tr>
+                    <td>Grant Type</td>
+                    <td>::</td>
+                    <td><input type="text" name='grant_type' value='access_token'/></td>
+                    <td>Client Id</td>
+                    <td>::</td>
+                    <td><input type="text" name='client_id'  value='<?= $access_code; ?>' /></td>
+                    <td>Client Secret</td>
+                    <td>::</td>
+                    <td><input type="text" name='client_secret'  value='<?= $secretekey; ?>'/></td>
+                </tr>
+                <tr>
+                    <td>Scope</td>
+                    <td>::</td>
+                    <td><input type="text" name='scope'  value= 'superUser'/></td>
+                    <td>Company Id</td>
+                    <td>::</td>
+                    <td><input type="text" name='id'  value= "8"/></td>
+                    <td>UID</td>
+                    <td>::</td>
+                    <td><input type="text" name="UID" value='<?=$access_code; ?>'/></td>
+                </tr>
+                <tr>
+                    <td>Approval Status</td>
+                    <td>::</td>
+                    <td><input type="text" name="ApprovalStatus" value="false"/></td>
+                    <td>Combo Loan</td>
+                    <td>::</td>
+                    <td><input type="text" name="ComboLoan" value="No"/></td>
+                    <td>Auth Key</td>
+                    <td>::</td>
+                    <td><input type="text" name="AuthKey" value='<?= $secretekey; ?>'/></td>
+                </tr>
+                <tr>
+                    <td>Origin Date TimeZ</td>
+                    <td>::</td>
+                    <td><input type="text" name="OriginDateTimeZ" value= "2017-02-02 13:56:40"/></td>
+                    <td>Version</td>
+                    <td>::</td>
+                    <td><input type="text" name="Version" value= "1.0.0"/></td>
+                    <td>Channel Code</td>
+                    <td>::</td>
+                    <td><input type="text" name='ChannelCode'  value="1"/></td>
+                </tr>
+                <tr>
+                    <td>Procedure Type</td>
+                    <td>::</td>
+                    <td><input type="text" name='ProcedureType'  value="1"/></td>
+                    <td>Loan Amount</td>
+                    <td>::</td>
+                    <td><input type="text" name='LoanAmt'  value="12000"/></td>
+                    <td>Loan Amount Currency</td>
+                    <td>::</td>
+                    <td><input type="text" name='LoanAmtCurrency'  value='USD'/></td>
+                </tr>
+                <tr>
+                    <td>Provider Code</td>
+                    <td>::</td>
+                    <td><input type="text" name='ProviderCode'  value='100100'/></td>
+                    <td>Borrower State Code</td>
+                    <td>::</td>
+                    <td><input type="text" name="AcceptedBorStates" value="CA"/></td>
+                    <td>Own Rent Code</td>
+                    <td>::</td>
+                    <td><input type="text" name="OwnRentCode" value="1"/></td>
+                </tr>
+                <tr>
+                    <td>Months Current Resident</td>
+                    <td>::</td>
+                    <td><input type="text" name="MosCurrRes" value="30"/></td>
+                    <td>Monthly Rent Payment</td>
+                    <td>::</td>
+                    <td><input type="text" name="MonthlyRentPayment" value="3000"/></td>
+                    <td>Monthly Rent Payment Currency</td>
+                    <td>::</td>
+                    <td><input type="text" name="MonthlyRentPaymentCurrency" value="USD"/></td>
+                </tr>
+                <tr>
+                    <td>Emp. Type Code</td>
+                    <td>::</td>
+                    <td><input type="text" name="EmplTypeCode" value="W2-FT"/></td>
+                    <td>Present Job Months</td>
+                    <td>::</td>
+                    <td><input type="text" name="PresentJobMos" value="15"/></td>
+                    <td>Line Of Work Months</td>
+                    <td>::</td>
+                    <td><input type="text" name="LineOfWorkMos" value="50"/></td>
+                </tr>
+                <tr>
+                    <td>Credit Score</td>
+                    <td>::</td>
+                    <td><input type="text" name="CreditScore" value="625"/></td>
+                    <td>Total Income All Bors</td>
+                    <td>::</td>
+                    <td><input type="text" name="TotalIncomeAllBors" value="10000"/></td>
+                    <td>Income Currency All Bors</td>
+                    <td>::</td>
+                    <td><input type="text" name="IncomeCurrencyAllBors" value="USD"/></td>
+                </tr>
+                <tr>
+                    <td>Total Debt All Bors</td>
+                    <td>::</td>
+                    <td><input type="text" name="TotalDebtAllBors" value="5000"/></td>
+                    <td>Total Debts Currency All Bors</td>
+                    <td>::</td>
+                    <td><input type="text" name="TotalDebtsCurrencyAllBors" value="USD"/></td>
+                    <td>Total Debt Ratio Pre</td>
+                    <td>::</td>
+                    <td><input type="text" name="TotalDebtRatioPre" value="50.0"/></td>
+                </tr>
+                <tr>
+                    <td>Reply URL</td>
+                    <td>::</td>
+                    <td><input type="text" name="ReplyUrl" value="http://re.sdwnmt.com/reply.php"/></td>
+                    <td>Auth Code</td>
+                    <td>::</td>
+                    <td><input type="text" name="AuthCode" value='<?= $access_code; ?>'/></td>
+                </tr>
+                <tr>
+                    <td>Test Type</td>
+                    <td>::</td>
+                    <td>
+                    <select name="TestType" id="TestType">
+                    <?php foreach($processes as $process){ ?>
+                    <option value="<?=$process->process_id ?>"><?=$process->process_code ?></option>
+                    <?php } ?>
+                    </td>
+                    <td>Rule To Execute</td>
+                    <td>::</td>
+                    <td id="rules">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" name="post" value="Post" />
+        </form>
+        <div name="result" id="result"></div>
+        <div name="conditions" id="conditions"></div>
+    </body>
+    <script src="../js/script.js"></script>
+</html>

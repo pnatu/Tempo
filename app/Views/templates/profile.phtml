@@ -1,0 +1,67 @@
+<?php
+if (!isset($_SESSION['loggedIn'])) {
+    header("Location: http://35.167.52.234/login"); /* Redirect browser */
+    exit();
+}
+$userInfo = $_SESSION['userInfo'];
+?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Profile</title>
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Merriweather:400,700,900" rel="stylesheet">
+            <style type="text/css">
+                .altrowClass { background-color: gray; background-image: none }
+            </style>
+            <link href="/css/design.css" rel="stylesheet">
+                </head>
+                <body>
+                    <header id="master-header" class="clearfix" role="banner">
+
+                        <hgroup>
+                            <h1 id="site-title">Tempo</h1>
+
+                        </hgroup>
+
+                    </header>
+                    <div id="main" class="row clearfix">
+                        <nav class="main-navigation clearfix span12" role="navigation">
+                            <h3 class="assistive-text">Menu</h3>
+                            <ul>
+                                <li><a href="/profile">Dashboard</a></li>
+                                <li><a href="/userslist">Users List</a></li>
+                                <li><a href="/eventslist">Events List</a></li>
+                            </ul>
+                        </nav> 
+                        <div id="content" role="main" class="span7">
+
+                            <article class="post hentry">
+
+                                <header class="entry-header">
+                                    <h1 class="entry-title">
+                                        <a href="#" title="Post Heading" rel="bookmark">Dashboard</a>
+                                    </h1>
+                                   <!-- <a href="#" title="Profile">
+                                        <img src="/avatar/<?php echo $userInfo['user_avatar']; ?>" alt="Post thumbnail" class="thumbnail" width="130" />
+                                    </a>-->
+                                </header> <!-- .entry-header -->
+
+                                <div class="entry-content">
+                                    <h4>Welcome Admin </h4>
+
+                                    <p>This is the Dashboard page. </p>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <footer id="footer" role="contentinfo">
+
+                        <p>
+                            Copyright &copy; 2017 <a href="#">Tempo</a>
+                            <span class="sep">|</span>
+
+                        </p>
+                    </footer> <!-- #footer -->
+                </body>
+                </html>

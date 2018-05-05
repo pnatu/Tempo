@@ -1,0 +1,101 @@
+<?php
+require_once("/phpGrid_Lite/conf.php");
+if (!isset($_SESSION['loggedIn'])) {
+    header("Location: http://tempo/login"); /* Redirect browser */
+    exit();
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Users Information</title>
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Merriweather:400,700,900" rel="stylesheet">
+            <style type="text/css">
+                .altrowClass { background-color: gray; background-image: none }
+            </style>
+            <link href="/css/design.css" rel="stylesheet">
+                </head>
+                <body>
+                    <header id="master-header" class="clearfix" role="banner">
+
+                        <hgroup>
+                            <h1 id="site-title">Tempo</h1>
+
+                        </hgroup>
+
+                    </header>
+                    <div id="main" class="row clearfix">
+                        <span style="float:right;"><a href="/logout">Log Out</a></span>
+                        <nav class="main-navigation clearfix span12" role="navigation" style="float:left;">
+                            <h3 class="assistive-text">Menu</h3>
+                            <ul>
+                                <li><a href="/profile">Dashboard</a></li>
+                                <li><a href="/userslist">Users List</a></li>
+                                <li><a href="/eventslist">Events List</a></li>
+                            </ul>
+                            
+                        </nav> 
+                        <div style="clear:both;"></div>
+                        <div id="content" role="main" class="span7">
+
+                            <article class="post hentry">
+
+                                <header class="entry-header">
+                                    <h1 class="entry-title">
+                                        <a href="#" title="Post Heading" rel="bookmark">Users Information</a>
+                                    </h1>
+
+                                </header> <!-- .entry-header -->
+
+                                <div class="entry-content" >
+                                    <p>
+                                    <?php
+                                       echo "<b style='font-size: 16px;'>".$userInfo['first_name']." ".$userInfo['last_name']."</b>";
+                                    ?>
+                                    </p>
+                                    <div style="background-color:#f0fefe;width:100%;float:left;">
+                                        <div class="avatar">
+                                            <img src="<?php echo '/avatar/'.$userInfo['user_avatar']?>" width="150" height="150">
+                                        </div>
+                                        <div class="uinfo">
+                                            <p style="font-size: 16px;"><b>Contact Information</b><br/>
+                                               <p class="user-field"><lable>Email:  </lable><?php echo $userInfo['user_email'];?></p>
+                                               <p class="user-field"><lable> Phone: </lable><?php echo $userInfo['user_phone'];?></p>
+                                            </p>
+                                            <p style="font-size: 16px;"><b>General Information</b><br/>
+                                                 <?php //$bday = explode('-',$userInfo['user_dob']);
+                                                 $bday = date("d M Y", strtotime($userInfo['user_dob']));
+                                                 ?>
+                                               <p class="user-field"> <lable>Birthday: </lable><?php echo $bday;?></p>
+                                               <p class="user-field"><lable>User Type: </lable>    <?php echo $userInfo['user_type'];?></p>
+                                               <p class="user-field"><lable>Account Type:</lable>  <?php echo $userInfo['account_type'];?></p>
+                                            </p>
+                                        </div>
+                                        <div class="uinfo">
+                                            <p style="font-size: 16px;"><b>Additional Information</b><br/>
+                                               <p class="user-field"><lable>Address:  </lable><?php echo $userInfo['user_address'];?></p>
+                                               <p class="user-field"><lable> City: </lable><?php echo $userInfo['user_city'];?></p>
+                                               <p class="user-field"><lable> State: </lable><?php echo $userInfo['user_state'];?></p>
+                                              <p class="user-field"> <lable> Country: </lable><?php echo $userInfo['user_country'];?></p>
+                                              <p class="user-field"> <lable> Zip Code: </lable><?php echo $userInfo['user_zipcode'];?></p>
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+                    </div>
+                    <footer id="footer" role="contentinfo">
+
+                        <p>
+                            Copyright &copy; 2017 <a href="#">Tempo</a>
+                            <span class="sep">|</span>
+
+                        </p>
+                    </footer> <!-- #footer -->
+                </body>
+                </html>

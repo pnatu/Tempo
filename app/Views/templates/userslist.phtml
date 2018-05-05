@@ -1,0 +1,95 @@
+<?php
+require_once("phpGrid_Lite/conf.php");
+if (!isset($_SESSION['loggedIn'])) {
+    header("Location: /login"); /* Redirect browser */
+    exit();
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Users List</title>
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Merriweather:400,700,900" rel="stylesheet">
+            <style type="text/css">
+                .altrowClass { background-color: gray; background-image: none }
+            </style>
+            <link href="/css/design.css" rel="stylesheet">
+                </head>
+                <body>
+                    <header id="master-header" class="clearfix" role="banner">
+
+                        <hgroup>
+                            <h1 id="site-title">Tempo</h1>
+
+                        </hgroup>
+
+                    </header>
+                    <div id="main" class="row clearfix">
+                        <span style="float:right;"><a href="/logout">Log Out</a></span>
+                        <nav class="main-navigation clearfix span12" role="navigation" style="float:left;">
+                            <h3 class="assistive-text">Menu</h3>
+                            <ul>
+                                <li><a href="/profile">Dashboard</a></li>
+                                <li><a href="/userslist">Users List</a></li>
+                                <li><a href="/eventslist">Events List</a></li>
+                                <li><a href="/slap">Cooling Down Slap</a></li>
+                            </ul>
+                            
+                        </nav> 
+                        <div style="clear:both;"></div>
+                        <div id="content" role="main" class="span7">
+
+                            <article class="post hentry">
+
+                                <header class="entry-header">
+                                    <h1 class="entry-title">
+                                        <a href="#" title="Post Heading" rel="bookmark">Users List</a>
+                                    </h1>
+
+                                </header> <!-- .entry-header -->
+
+                                <div class="entry-content">
+                                    <?php
+                                    
+                                    $dg = new C_DataGrid("SELECT user_id as id,concat('/avatar/',user_avatar) as user_avatar,first_name,last_name,display_name,user_email,user_phone,
+                                        user_city,user_state,user_type,(SELECT COUNT(*) FROM events
+        WHERE created_by_user = user_id) AS eventCount,created_at FROM users");
+                                    $dg -> set_sortname('first_name', 'DESC');
+                                    $dg->set_col_title("first_name", "first name");
+                                    $dg->set_col_title("last_name", "Last Name");
+                                    $dg->set_col_title("display_name", "Display Name");
+                                    $dg->set_col_title("user_email", "Email");
+                                    $dg->set_col_title("user_phone", "Phone");
+                                    $dg->set_col_title("user_city", "City");
+                                    $dg->set_col_title("user_state", "State");
+                                    $dg->set_col_title("user_avatar", "Image");
+                                    $dg->set_col_title("eventCount", "Events");
+                                    $dg->set_col_title("user_type", "Type");
+                                    // display image
+                                    $dg->set_col_img("user_avatar");
+                                    $dg->set_col_width("user_avatar",40);
+                                    $dg->set_col_width("user_type",50);
+                                    $dg->set_col_width("eventCount",50);
+                                    $dg->set_col_width("created_at",130);
+                                    $dg->set_col_width("user_phone",90);
+                                    $dg -> set_col_dynalink("first_name","http://tempo/user/"); 
+                                    $dg -> set_col_hidden("id");
+                                    $dg->display();
+                                    ?>
+                                </div>
+                            </article>
+                        </div>
+
+
+                    </div>
+                    <footer id="footer" role="contentinfo">
+
+                        <p>
+                            Copyright &copy; 2017 <a href="#">Tempo</a>
+                            <span class="sep">|</span>
+
+                        </p>
+                    </footer> <!-- #footer -->
+                </body>
+                </html>
